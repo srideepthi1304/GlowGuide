@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GLOWGUIDEE</title>
+  <link rel="icon" href="logo.jpeg" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <img alt="SkinKraft Logo" height="100" width="50" src="logo.jpeg"/>
+    <nav>
+      <div class="glowguideetext"><a>GLOWGUIDEE</a></div>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <section>
+      <img alt="Hero Image" src="bla.jpg" height="400" width="3000" />
+    </section>
+
+    <section class="newhero-section">
+      <div class="newhero-content">
+        <h2>Welcome to GlowGuidee</h2>
+        <p>Begin your personalized skincare journey with GlowGuidee. Discover expertly tailored skincare recommendations for a glowing, healthy complexion that’s uniquely yours.</p>
+        <button class="newcta-button">Learn More</button>
+      </div>
+      <img src="glowguide.jpg" alt="Skincare products" class="newhero-image" />
+    </section>
+
+    <section>
+      <p>Take the SkinID Skin Quiz to know your skin</p>
+      <a href="quiz.html">
+        <button>Take the Skin Quiz</button>
+      </a>
+    </section>
+  </div>
+
+  <div class="products">
+    <h2>KNOW YOUR SKIN BETTER</h2>
+    <div class="product-list">
+      <!-- Oily, Dry, Sensitive, Combo Cards -->
+      <div class="product"><img src="oilyskin.jpeg" width="200" height="200" /><h3>OILY SKIN</h3><p>Oily skin...</p><a href="#">Know More</a></div>
+      <div class="product"><img src="dryskin.jpeg" width="200" height="200" /><h3>DRY SKIN</h3><p>Dry skin...</p><a href="#">Know More</a></div>
+      <div class="product"><img src="acneskin.jpeg" width="300" height="300" /><h3>SENSITIVE SKIN</h3><p>Sensitive skin...</p><a href="#">Know More</a></div>
+      <div class="product"><img src="combinationskin.jpeg" width="300" height="400" /><h3>COMBINATION</h3><p>Combination skin...</p><a href="#">Know More</a></div>
+    </div>
+  </div>
+
+  <!-- TAKE CARE -->
+  <section id="newlongimages">
+    <div class="newproducts">
+      <h2> TAKE CARE!!</h2>
+      <div class="newproduct-list">
+        <!-- Skincare Tips Cards -->
+        <div class="newproduct"><img src="slide1.jpg" width="200" height="200" /><h3>OILY SKIN</h3><p>Needs...</p></div>
+        <div class="newproduct"><img src="slide.2.jpg" width="200" height="200" /><h3>DRY SKIN</h3><p>Needs...</p></div>
+        <div class="newproduct"><img src="slide3.jpg" width="300" height="300" /><h3>SENSITIVE SKIN</h3><p>Needs...</p></div>
+        <div class="newproduct"><img src="slide4.jpg" width="300" height="400" /><h3>COMBINATION</h3><p>Needs...</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKIN CARE SECTION -->
+  <section id="new1"><div class="new2">SKIN CARE</div></section>
+  <section id="SHOP1">
+    <div class="container">
+      <div class="categories">
+        <div class="category"><img src="cleanser.jpg" height="150" width="150"/><p>Cleanser</p></div>
+        <div class="category"><img src="serum.jpg" height="150" width="150"/><p>Serum</p></div>
+        <div class="category"><img src="moisturizer.jpg" height="150" width="150"/><p>Moisturizer</p></div>
+        <div class="category"><img src="sunscreen.jpg" height="150" width="150"/><p>Sunscreen</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE DETECTION -->
+  <section id="imagedetection">
+    <div class="upload-container">
+      <h2>Upload Skin Image</h2>
+      <input type="file" id="imageUpload" accept="image/*" />
+      <button id="uploadButton">Upload Image</button>
+      <div id="output" class="output"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <h2>Your Safety Is Our Top Most Priority</h2>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

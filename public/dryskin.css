@@ -1,0 +1,81 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 30px 0;
+  color: #2c3e50;
+}
+
+/* Styling for the product recommendations section */
+.product-recommendations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Product Styling */
+.product {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+}
+
+/* Product Image Styling */
+.product img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Product Title */
+.product h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin: 15px 0;
+}
+
+/* Product Description */
+.product p {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin: 10px 0;
+}
+
+/* Styling for the Buy Now link */
+.product a {
+  text-decoration: none;
+  color: #2980b9;
+  font-weight: bold;
+}
+
+.product a:hover {
+  text-decoration: underline;
+  color: #3498db;
+}
+
+/* Make sure it is responsive */
+@media (max-width: 768px) {
+  .product {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}

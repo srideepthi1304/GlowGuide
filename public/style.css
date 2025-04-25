@@ -1,0 +1,83 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+  }
+  
+  header {
+    background-color: #ffccdd;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .glowguideetext a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d63384;
+    text-decoration: none;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .newhero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff0f5;
+    padding: 20px;
+  }
+  
+  .newcta-button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .products,
+  .newproducts,
+  .container {
+    padding: 20px;
+  }
+  
+  .product-list, .newproduct-list, .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product, .newproduct, .category {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    background: #fafafa;
+    flex: 1;
+  }
+  
+  #imagedetection {
+    background: #fce4ec;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .upload-container input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  .output {
+    margin-top: 20px;
+    background: #fff3f8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+  }
+  

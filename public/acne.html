@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acne Skin Care Guide</title>
+    <link rel="acne" href="style.css">
+    <style>
+        /* General Body and Section Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-color: #e74c3c;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero-section img {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .section p, .section ul {
+            font-size: 1rem;
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+
+        .section ul {
+            list-style-type: square;
+            margin-left: 40px;
+        }
+
+        /* Product Recommendations Section */
+        .product-recommendations {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            width: 250px;
+            background-color: #fff;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+        }
+
+        .product img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin: 15px 0;
+        }
+
+        .product p {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+
+        .product a {
+            color: #2980b9;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .product a:hover {
+            color: #3498db;
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .product {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Acne Skin Care Guide</h1>
+        <p>Learn how to care for acne-prone skin with proper prevention, effective remedies, and recommended products.</p>
+        <img src="https://via.placeholder.com/1200x600?text=Acne+Care" alt="Acne Care">
+    </section>
+
+    <!-- Acne Information Section -->
+    <section class="section">
+        <h2>What is Acne?</h2>
+        <p>Acne is a common skin condition that occurs when hair follicles become clogged with oil and dead skin cells. It can result in pimples, blackheads, and cysts. Acne typically affects the face, back, and shoulders.</p>
+        <p>Common causes of acne include:</p>
+        <ul>
+            <li>Excess oil production (sebum)</li>
+            <li>Clogged hair follicles</li>
+            <li>Hormonal changes (e.g., puberty, pregnancy, menstruation)</li>
+            <li>Stress and poor diet</li>
+            <li>Certain medications</li>
+        </ul>
+    </section>
+
+    <!-- Acne Prevention Section -->
+    <section class="section">
+        <h2>How to Prevent Acne</h2>
+        <p>Preventing acne involves proper skincare, a balanced lifestyle, and understanding your skin’s needs. Here are some tips:</p>
+        <ul>
+            <li>Wash your face twice a day with a gentle, non-comedogenic cleanser.</li>
+            <li>Avoid touching your face to minimize transferring oils and bacteria.</li>
+            <li>Use oil-free and non-comedogenic skincare and makeup products.</li>
+            <li>Stay hydrated and follow a balanced, acne-friendly diet.</li>
+            <li>Manage stress levels to avoid triggering hormonal acne.</li>
+            <li>Get adequate sleep to allow your skin to repair itself overnight.</li>
+        </ul>
+    </section>
+
+    <!-- Acne Remedies Section -->
+    <section class="section">
+        <h2>Effective Remedies for Acne</h2>
+        <p>Several remedies can help clear acne and improve the overall health of your skin. These include:</p>
+        <ul>
+            <li><strong>Benzoyl Peroxide:</strong> Kills acne-causing bacteria and reduces inflammation.</li>
+            <li><strong>Salicylic Acid:</strong> Exfoliates the skin and clears clogged pores.</li>
+            <li><strong>Tea Tree Oil:</strong> Natural antibacterial properties that help fight acne.</li>
+            <li><strong>Retinoids:</strong> Improve cell turnover and prevent clogged pores.</li>
+            <li><strong>Clay Masks:</strong> Absorb excess oil and cleanse pores deeply.</li>
+        </ul>
+    </section>
+
+    <!-- Recommended Products Section -->
+    <section class="section">
+        <h2>Recommended Products for Acne-Prone Skin</h2>
+        <div class="product-recommendations">
+
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="https://via.placeholder.com/300x300?text=Acne+Face+Wash" alt="Acne Face Wash">
+                <h3>Acne Face Wash</h3>
+                <p>A gentle cleanser that helps remove oil and impurities without drying your skin.</p>
+                <p><strong>Buy Now:</strong> <a href="https://www.amazon.com/dp/B08D6N2M9G" target="_blank">Acne Face Wash on Amazon</a></p>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="https://via.placeholder.com/300x300?text=Salicylic+Acid+Serum" alt="Salicylic Acid Serum">
+                <h3>Salicylic Acid Serum</h3>
+                <p>This serum exfoliates the skin and clears clogged pores to reduce acne.</p>
+                <p><strong>Buy Now:</strong> <a href="https://www.amazon.com/dp/B01A6WRRZY" target="_blank">Salicylic Acid Serum on Amazon</a></p>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="https://via.placeholder.com/300x300?text=Benzoyl+Peroxide+Gel" alt="Benzoyl Peroxide Gel">
+                <h3>Benzoyl Peroxide Gel</h3>
+                <p>A potent acne treatment that targets and kills acne-causing bacteria.</p>
+                <p><strong>Buy Now:</strong> <a href="https://www.amazon.com/dp/B07T1DGNNG" target="_blank">Benzoyl Peroxide Gel on Amazon</a></p>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product">
+                <img src="https://via.placeholder.com/300x300?text=Oil-Free+Moisturizer" alt="Oil-Free Moisturizer">
+                <h3>Oil-Free Moisturizer</h3>
+                <p>A lightweight moisturizer that hydrates without clogging pores.</p>
+                <p><strong>Buy Now:</strong> <a href="https://www.amazon.com/dp/B0011YZ2U0" target="_blank">Oil-Free Moisturizer on Amazon</a></p>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowGuidee - Skin Type Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>GlowGuidee Skin Type Quiz</h1>
+        <p>Find out your skin condition based on your daily habits and lifestyle.</p>
+        
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <label for="work-environment">What is your work environment like?</label>
+                <select id="work-environment" name="work-environment">
+                    <option value="indoor">Indoor (Office, Home)</option>
+                    <option value="outdoor">Outdoor (Construction, Fieldwork, college)</option>
+                </select>
+            </div>
+            
+            <!-- Question 2 -->
+            <div class="question">
+                <label for="diet">How would you describe your diet?</label>
+                <select id="diet" name="diet">
+                    <option value="balanced">Balanced (Fruits, Vegetables, Proteins)</option>
+                    <option value="junk">Junk Food (Fast Food, Sweets)</option>
+                    <option value="vegan">Vegan/Vegetarian</option>
+                </select>
+            </div>
+            
+            <!-- Question 3 -->
+            <div class="question">
+                <label for="water-intake">How much water do you drink daily?</label>
+                <select id="water-intake" name="water-intake">
+                    <option value="high">More than 2 liters</option>
+                    <option value="moderate">1-2 liters</option>
+                    <option value="low">Less than 1 liter</option>
+                </select>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <label for="skin-feel">How does your skin feel at the end of the day?</label>
+                <select id="skin-feel" name="skin-feel">
+                    <option value="dry">Dry and Tight</option>
+                    <option value="oily">Oily, especially around the T-zone</option>
+                    <option value="balanced">Balanced, neither too dry nor oily</option>
+                </select>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <label for="skincare-routine">How often do you follow a skincare routine?</label>
+                <select id="skincare-routine" name="skincare-routine">
+                    <option value="daily">Daily (Morning and Night)</option>
+                    <option value="sometimes">Sometimes (A few times a week)</option>
+                    <option value="never">Never</option>
+                </select>
+            </div>
+
+            <!-- Question 6 -->
+<div class="question">
+    <label for="q1">How does your skin feel after washing it with a cleanser?</label>
+    <select id="q1" name="q1">
+        <option value="dry">Tight and dry</option>
+        <option value="normal">Smooth and comfortable</option>
+        <option value="oily">Greasy</option>
+        <option value="combo">Oily in T-zone, dry elsewhere</option>
+        <option value="sensitive">Red or irritated</option>
+    </select>
+</div>
+
+<!-- Question 7 -->
+<div class="question">
+    <label for="q2">What does your skin look like by midday?</label>
+    <select id="q2" name="q2">
+        <option value="dry">Flaky or dull</option>
+        <option value="normal">Still fresh</option>
+        <option value="oily">Shiny all over</option>
+        <option value="combo">Shiny in T-zone only</option>
+        <option value="sensitive">Red or itchy</option>
+    </select>
+</div>
+
+<!-- Question 8 -->
+<div class="question">
+    <label for="q3">How often do you experience breakouts?</label>
+    <select id="q3" name="q3">
+        <option value="dry">Rarely</option>
+        <option value="normal">Occasionally</option>
+        <option value="oily">Frequently</option>
+        <option value="combo">In oily areas only</option>
+        <option value="sensitive">When using new products</option>
+    </select>
+</div>
+
+<!-- Question 9 -->
+<div class="question">
+    <label for="q4">How does your skin feel in winter?</label>
+    <select id="q4" name="q4">
+        <option value="dry">Very dry and tight</option>
+        <option value="normal">Slightly drier than usual</option>
+        <option value="oily">Less oily</option>
+        <option value="combo">Dry cheeks, oily forehead</option>
+        <option value="sensitive">Irritated or flaky</option>
+    </select>
+</div>
+
+<!-- Question 10 -->
+<div class="question">
+    <label for="q5">How visible are your pores?</label>
+    <select id="q5" name="q5">
+        <option value="dry">Hardly visible</option>
+        <option value="normal">Visible but small</option>
+        <option value="oily">Large and visible</option>
+        <option value="combo">Large in T-zone only</option>
+        <option value="sensitive">Red or inflamed</option>
+    </select>
+</div>
+
+<!-- Question 11 -->
+<div class="question">
+    <label for="q6">How does your skin react to new skincare products?</label>
+    <select id="q6" name="q6">
+        <option value="dry">No reaction</option>
+        <option value="normal">Adapts well</option>
+        <option value="oily">Becomes oilier</option>
+        <option value="combo">Some areas react</option>
+        <option value="sensitive">Redness or stinging</option>
+    </select>
+</div>
+
+
+            <button type="button" id="submit-btn">Submit</button>
+        </form>
+
+        <div id="result" class="hidden">
+            <h2>Your Skin Type Result</h2>
+            <p id="result-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
