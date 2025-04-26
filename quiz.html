@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skin Type Quiz</title>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #444;
+    }
+
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    .question p {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .options label {
+      display: block;
+      margin-left: 20px;
+      margin-bottom: 5px;
+    }
+
+    button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: block;
+      margin: 20px auto;
+    }
+
+    #result {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: #2b6c2b;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Find Your Skin Type</h1>
+  <form id="quizForm">
+    <div class="question">
+      <p>1. How does your skin feel after washing it with a gentle cleanser (and no moisturizer)?</p>
+      <div class="options">
+        <label><input type="radio" name="q1" value="dry"> Tight and dry</label>
+        <label><input type="radio" name="q1" value="normal"> Comfortable</label>
+        <label><input type="radio" name="q1" value="oily"> Oily or shiny</label>
+        <label><input type="radio" name="q1" value="combo"> Dry in some areas, oily in others</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>2. How often do you experience breakouts?</p>
+      <div class="options">
+        <label><input type="radio" name="q2" value="dry"> Rarely</label>
+        <label><input type="radio" name="q2" value="normal"> Occasionally</label>
+        <label><input type="radio" name="q2" value="oily"> Frequently</label>
+        <label><input type="radio" name="q2" value="combo"> Only in specific areas like forehead, nose, or chin</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>3. How does your skin look by midday?</p>
+      <div class="options">
+        <label><input type="radio" name="q3" value="dry"> Flaky or dull</label>
+        <label><input type="radio" name="q3" value="normal"> Fresh and balanced</label>
+        <label><input type="radio" name="q3" value="oily"> Shiny and greasy</label>
+        <label><input type="radio" name="q3" value="combo"> Oily in some parts, dry in others</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>4. How does your skin react to new products?</p>
+      <div class="options">
+        <label><input type="radio" name="q4" value="sensitive"> Gets red, itchy, or irritated</label>
+        <label><input type="radio" name="q4" value="normal"> No major reaction</label>
+        <label><input type="radio" name="q4" value="oily"> Sometimes breaks out</label>
+        <label><input type="radio" name="q4" value="combo"> Depends on the product type/area</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>5. How visible are your pores?</p>
+      <div class="options">
+        <label><input type="radio" name="q5" value="dry"> Hardly visible</label>
+        <label><input type="radio" name="q5" value="normal"> Normal</label>
+        <label><input type="radio" name="q5" value="oily"> Large and visible</label>
+        <label><input type="radio" name="q5" value="combo"> Large on nose/forehead only</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>6. What’s your biggest skin concern?</p>
+      <div class="options">
+        <label><input type="radio" name="q6" value="dry"> Dryness or tightness</label>
+        <label><input type="radio" name="q6" value="normal"> No major concerns</label>
+        <label><input type="radio" name="q6" value="oily"> Acne or excessive oil</label>
+        <label><input type="radio" name="q6" value="sensitive"> Redness or mixed issues</label>
+      </div>
+    </div>
+
+    <button type="button" onclick="calculateResult()">Submit Quiz</button>
+    <div id="result"></div>
+  </form>
+
+  <script>
+    function calculateResult() {
+      const answers = Array.from(document.querySelectorAll("input[type=radio]:checked")).map(input => input.value);
+      
+      if (answers.length < 6) {
+        alert("Please answer all the questions!");
+        return;
+      }
+
+      const count = {
+        dry: 0,
+        normal: 0,
+        oily: 0,
+        combo: 0,
+        sensitive: 0
+      };
+
+      answers.forEach(val => {
+        count[val]++;
+      });
+
+      let skinType = Object.keys(count).reduce((a, b) => count[a] > count[b] ? a : b);
+
+      const resultText = {
+        dry: "Your skin type is Dry. You may notice tightness and flakiness. Hydration is key!",
+        normal: "You have Normal skin. Balanced and healthy — keep up the good routine!",
+        oily: "Your skin type is Oily. Consider oil-control products and gentle cleansing.",
+        combo: "You have Combination skin. Focus on balancing products for different areas.",
+        sensitive: "Your skin is Sensitive. Be gentle and avoid harsh products."
+      };
+
+      document.getElementById("result").innerText = resultText[skinType];
+    }
+  </script>
+</body>
+</html>
